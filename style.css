@@ -28,8 +28,8 @@ p {
   top: 50%;
   left: 50%;
   z-index: 5;
-  width: 80%;
-  padding: 20px;
+  
+
   text-align: center;
 }
 
@@ -127,7 +127,7 @@ label {
     font-family: "TF2 Main";
     color: whitesmoke;
     font-size: 72px;
-    transform: translate(-50%, -370%);
+    transform: translate(-49%, -540%);
     text-shadow: 0 0 7px #000000, 0 0 7px gray;
 }
 
@@ -268,4 +268,22 @@ label {
     overflow-wrap: break-word;
     font-size: 18px;
     color: gray;
+}
+
+.github {
+    position: absolute;
+    transform: scale(50%);
+    top: 0.05%;
+    left: 0.01%;
+    z-index: 10;
+}
+
+.credit {
+    position: absolute;
+    top: 5.3%;
+    left: 6%;
+    font-family: "TF2 Main";
+    color: whitesmoke;
+    font-size: 24px;
+    text-shadow: 0 0 7px #000000, 0 0 7px gray;
 }
