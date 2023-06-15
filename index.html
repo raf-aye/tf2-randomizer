@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TF2 Randomizer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    
+    <body>
+        <script type = "module" src="script.js" defer></script>
+
+        <div class = "bg-image"></div>
+        
+        <!--[if lt IE 7]>
+            <p>You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <p class = "title">TF2 Randomizer</p>
+        <input type="text" class = "id" id="steamid" name="steamid" placeholder="Enter Profile URL to Randomize From Backpack">
+        <div class = "error" id = "err" style="display: none"></div>
+        <div class = "border" id = "border">
+        </div>
+        
+        <select name="Class Picker" id="classPicker">
+            <option value="random">Random Class</option>
+            <option value="Scout">Scout</option>
+            <option value="Soldier">Soldier</option>
+            <option value="Pyro">Pyro</option>
+            <option value="Demoman">Demoman</option>
+            <option value="Heavy">Heavy</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Medic">Medic</option>
+            <option value="Sniper">Sniper</option>
+            <option value="Spy">Spy</option>
+          </select>
+          <button type="button" id = "randomize" class = "randomize" onlick="randomize()">Randomize!</button>
+        <img id = "mercenary"></img>
+
+
+        <div class = "item" style = "transform: translate(100%, 85%);">
+            <img class="itemimg" id ="primaryimg" style = "transform: translateY(-30%) scale(85%)" src = "https://media.steampowered.com/apps/440/icons/c_picket.154051b579a1f9930968b832f55db42476ffb555.png">
+            <p id = "primary" class="itemtext" style = "transform: translate(-50%, -330%)"></p>
+        </div>
+        <div class = "item" style = "transform: translate(100%, 207.5%);">
+            <img class="itemimg" id ="secondaryimg" style = "transform: translateY(-30%) scale(85%)" src = "https://media.steampowered.com/apps/440/icons/c_picket.154051b579a1f9930968b832f55db42476ffb555.png">
+            <p id = "secondary" class="itemtext" style = "transform: translate(-50%, -330%)"></p>
+        </div>
+        <div class = "item" style = "transform: translate(100%, 330%);">
+            <img class="itemimg" id ="meleeimg" style = "transform: translateY(-30%) scale(85%)" src = "https://media.steampowered.com/apps/440/icons/c_picket.154051b579a1f9930968b832f55db42476ffb555.png">
+            <p id = "melee" class="itemtext" style = "transform: translate(-50%, -330%)"></p>
+        </div>
+        
+
+        <div class = "item" style = "transform: translate(210%, 85%);">
+            <img class="itemimg" id ="cosmetic1img" style = "transform: translateY(-30%) scale(85%)" src = "https://media.steampowered.com/apps/440/icons/c_picket.154051b579a1f9930968b832f55db42476ffb555.png">
+            <p id = "cosmetic1" class="itemtext" style = "transform: translate(-50%, -330%)"></p>
+        </div>
+        <div class = "item" style = "transform: translate(210%, 207.5%);">
+            <img class="itemimg" id ="cosmetic2img" style = "transform: translateY(-30%) scale(85%)" src = "https://media.steampowered.com/apps/440/icons/c_picket.154051b579a1f9930968b832f55db42476ffb555.png">
+            <p id = "cosmetic2" class="itemtext" style = "transform: translate(-50%, -330%)"></p>
+        </div>
+        <div class = "item" style = "transform: translate(210%, 330%);">
+            <img class="itemimg" id ="cosmetic3img" style = "transform: translateY(-30%) scale(85%)" src = "https://media.steampowered.com/apps/440/icons/c_picket.154051b579a1f9930968b832f55db42476ffb555.png">
+            <p id = "cosmetic3" class="itemtext" style = "transform: translate(-50%, -330%)"></p>
+        </div>
+
+        <img class = "profile" id = "profile" style = "display: none"></img>
+        <div class = "profileName" id = "profileName" style = "display: none"></div>
+
+        <div class = "stratTitle" id = "stratTitle">Helping Others Succeed</div>
+        <div class = "stratDesc" id = "stratDesc">As Heavy, you are not allowed to attack, and you must always throw your lunchbox items to teammates in need as soon as you get them (Change your loadout if needed)</div>
+    </body>
+</html>

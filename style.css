@@ -1,0 +1,271 @@
+@font-face {
+    font-family: "TF2 Main";
+    src: url("fonts/TF2.ttf");
+}
+
+@font-face {
+    font-family: "TF2 Alt";
+    src: url("fonts/tf2build.ttf");
+}
+
+@font-face {
+    font-family: "TF2 Selection";
+    src: url("fonts/tf2professor.ttf");
+}
+
+body, html {
+    height: 100%;
+    margin: 0%;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+p {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+select {
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+
+    font-family: "TF2 Alt";
+    font-size: 14px;
+    border-radius: 25px;
+    background: #3C362F;
+    color: whitesmoke;
+
+    top: 28%;
+    left: 14%;
+    width: 20%;
+    height: 5%; 
+    
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-family: "TF2 Main";
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.id {
+    z-index: 10;
+    position: absolute;
+    top: 17%;
+    left: 33%;
+    width: 35%;
+    height: 5%; 
+
+    font-family: "TF2 Alt";
+    text-align: center;
+    font-size: 14px;
+    border-radius: 25px;
+    background: #3C362F;
+    color: whitesmoke;
+
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.error {
+    position: absolute;
+    font-family: "TF2 Main";
+    font-size: 20px;
+    color: red;
+    top: 18%;
+    left: 70%;
+
+    text-shadow: 0 0 7px #000000, 0 0 7px gray;
+    
+}
+
+.randomize {
+    z-index: 10;
+    position: absolute;
+    top: 85%;
+    left: 70%;
+    width: 15%;
+    height: 10%; 
+
+    font-family: "TF2 Alt";
+    text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #3C362F;
+    color: whitesmoke;
+    transition: 0.25s;
+    opacity: 1;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.randomize:hover {cursor: pointer; transform: scale(105%)}
+
+.bg-image {
+    background-image: url("assets/background.jpg");
+    height: 100%; /* You must set a specified height */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.title {
+    align-self: center;
+    font-family: "TF2 Main";
+    color: whitesmoke;
+    font-size: 72px;
+    transform: translate(-50%, -370%);
+    text-shadow: 0 0 7px #000000, 0 0 7px gray;
+}
+
+.border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+
+    border-radius: 25px;
+    background: #24201B;
+    padding: 50px; 
+    width: 75%;
+    height: 75%; 
+    transform: translate(-50%, -35%);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.merc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+    scale: 45%;
+}
+
+/* Each class is weirdly offset, so I tried my best to center them all, duplicates are here but thats just for ease of access in code*/
+
+.scout { transform: translate(-205%, -100%);}
+.soldier {transform: translate(-210%, -105%); }
+.pyro {transform: translate(-205%, -100%); }
+.demoman {transform: translate(-205%, -100%); }
+.heavy {transform: translate(-207%, -105%); }
+.engineer {transform: translate(-207%, -105%); }
+.medic {transform: translate(-205%, -100%)}
+.sniper {transform: translate(-205%, -99%)}
+.spy {transform: translate(-205%, -99%)}
+
+.item {
+    align-items:flex-end;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+
+    border-radius: 25px;
+    background: #3C362F;
+    
+    width: 15%;
+    height: 20%; 
+    
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.itemtext {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    z-index: 5;
+    
+    font-family: TF2 Alt;
+    font-size: 18px;
+    color: yellow;
+    inline-size: 240px;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    overflow-y: clip;
+}
+
+.itemimg {
+    position: relative;
+    margin:auto;
+}
+
+.profile {
+    position: absolute;
+    top: 27%;
+    left: 68%;
+    z-index: 10;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px #b19f8c,
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.profileName {
+    position: absolute;
+    top: 28.5%;
+    left: 70%;
+    z-index: 10;
+    
+    font-family: "TF2 Alt";
+    inline-size: 240px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+.stratTitle {
+    position: absolute;
+    top: 47%;
+    left: 69.5%;
+    z-index: 10;
+    
+    font-family: "TF2 Alt";
+    inline-size: 240px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 24px;
+    color: yellow;
+}
+
+.stratDesc {
+    position: absolute;
+    top: 57%;
+    left: 67%;
+    z-index: 10;
+    
+    font-family: "TF2 Alt";
+    inline-size: 310px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 18px;
+    color: gray;
+}
